@@ -1,1 +1,1 @@
-﻿SELECT students.name, courses.title FROM students JOIN enrollments ON students.id = enrollments.student_id JOIN courses ON enrollments.course_id = courses.id ORDER BY students.name ASC, courses.title ASC;
+SELECT students.name, courses.title FROM students JOIN enrollments ON students.id = enrollments.student_id JOIN courses ON enrollments.course_id = courses.id ORDER BY students.name ASC, courses.title ASC;
