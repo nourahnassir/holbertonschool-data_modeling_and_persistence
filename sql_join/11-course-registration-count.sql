@@ -1,1 +1,1 @@
-SELECT courses.title, COUNT(registrations.student_id) FROM courses LEFT JOIN registrations ON courses.id = registrations.course_id GROUP BY courses.id ORDER BY COUNT(registrations.student_id) DESC, courses.title ASC;
+SELECT courses.title, COUNT(enrollments.student_id) FROM courses LEFT JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.id ORDER BY COUNT(enrollments.student_id) DESC, courses.title ASC;
